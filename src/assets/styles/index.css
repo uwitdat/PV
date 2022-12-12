@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  body {
+    @apply bg-bg;
+  }
+
+  h1,h2, h3, h4, h5, h6, p, span {
+    @apply font-prim text-dark;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl text-dark font-bold;
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl font-bold;
+  }
+
+  p {
+    @apply text-accent text-sm sm:text-base;
+  }
+}

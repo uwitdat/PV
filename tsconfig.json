@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["src/components/*"],
+      "@/types": ["src/types/index.ts"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/helpers": ["src/helpers/index.ts"],
+      "@/slices/*": ["src/redux/slices/*"],
+      "@/paths": ["src/utils/paths.ts"],
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
