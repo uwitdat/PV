@@ -1,6 +1,8 @@
 import { capitalize, formatTextBody } from '@/helpers';
-import { threadStyles } from './styles';
+import { styles } from './styles';
 import { ThreadProps } from './types';
+
+const { base, active, neutral } = styles;
 
 export const Thread = ({
   title,
@@ -11,7 +13,6 @@ export const Thread = ({
 }: ThreadProps) => {
   const postTitleFormatted = capitalize(title!.replaceAll('-', ' '));
   const postDescFormatted = formatTextBody(description!);
-  const { base, active, neutral } = threadStyles;
 
   return (
     <div

@@ -7,7 +7,9 @@ import { SuspenseView } from '@/components/SuspenseView';
 import { Error } from '@/components/Error';
 import { useEffect, useState } from 'react';
 import { ButtonsPanel } from './components/ButtonsPanel';
-import { containerStyles } from './styles';
+import { styles } from './styles';
+
+const { grid: gridStyles, list } = styles;
 
 export const Threads = () => {
   const { threads, isLoading, error } = useGetThreadsReduxToolkit();
@@ -32,8 +34,6 @@ export const Threads = () => {
   if (error) {
     return <Error />;
   }
-
-  const { grid: gridStyles, list } = containerStyles;
 
   return (
     <div className="p-3">

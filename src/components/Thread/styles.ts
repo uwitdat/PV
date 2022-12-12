@@ -1,6 +1,6 @@
 import { clsx } from 'clsx';
 
-export const threadStyles = {
+export const styles = {
   base: clsx(
     'border-l-[3px] transition-all duration-100',
     'relative pb-14 rounded-lg group',
